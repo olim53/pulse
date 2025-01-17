@@ -25,13 +25,17 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.83.1"
   },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/olim53/pulse.git"
-    },
-    "bugs": {
-      "url": "https://github.com/olim53/pulse/issues"
-    },
-    "homepage": "https://github.com/olim53/pulse#readme"
-  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olim53/pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olim53/pulse/issues"
+  },
+  "homepage": "https://github.com/olim53/pulse#readme",
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not dead"
+  ]
 }
