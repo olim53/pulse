@@ -1,0 +1,23 @@
+@use '../base/variables' as var;
+
+.button {
+    width: 153px;
+    height: 32px;
+    background-color: var.$bg-color-button;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var.$text-color-light;
+    &--promo {
+        max-width: 100%;
+        width: 303px;
+        height: 54px;
+        font-size: 16px;
+    }
+    &:hover {
+        background-color: #be0c0c;
+    }
+}

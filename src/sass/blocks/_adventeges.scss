@@ -1,0 +1,38 @@
+@use '../base/variables' as var;
+.adventeges {
+    min-height: 473px;
+    background-color: var.$bg-color-section;
+    padding: 73px 0 65px;
+    &__items {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__item {
+        margin-top: 20px;
+        width: 25%;
+        text-align: center;
+    }
+    &__icon {
+        margin-bottom: 35px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        color: var.$text-color-dark;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: var.$text-color-dark;
+        a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: #f00;
+        }
+    }
+}
