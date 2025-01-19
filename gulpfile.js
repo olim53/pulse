@@ -1,7 +1,6 @@
-// Импорт модулей Gulp
 import gulp from "gulp";
 import gulpSass from "gulp-sass";
-import dartSass from "sass";
+import * as dartSass from "sass";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
@@ -23,11 +22,11 @@ const paths = {
 // Компиляция SCSS в CSS
 function styles() {
   return src(paths.scss)
-    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(rename({
-      suffix: ".min" 
+      suffix: ".min"
     }))
     .pipe(sourcemaps.write("."))
     .pipe(dest(paths.css))
