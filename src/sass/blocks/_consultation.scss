@@ -1,0 +1,13 @@
+@use "../base/variables" as var;
+
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 108px;
+    background: var.$text-color-secondary url('../img/counselling-bg.png') no-repeat center center / cover;
+    &__descr {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: var.$text-color-light;
+    }
+}

@@ -24,6 +24,10 @@
             width: 31%;
         }
     }
+    .title--left {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 @media (max-width: 767.98px) {
     .container {
@@ -79,6 +83,17 @@
     }
     .title {
         font-size: 26px;
+        &--left {
+            line-height: 35px;
+        }
+    }
+    .consultation {
+        min-height: 500px;
+        padding: 60px 0 68px;
+        &__descr {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 }
 @media (max-width: 575.98px) {
@@ -127,5 +142,13 @@
     }
     .title {
         font-size: 20px;
+        line-height: 30px;
+    }
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        input {
+            opacity: .7;
+        }
     }
 }
