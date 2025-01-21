@@ -19,10 +19,20 @@
         border-radius: 5px;
         font-size: 16px;
         border: none;
+        transition: all 0.3s;
+        border: 1px solid var.$text-color-light;
         &::placeholder {
             font-weight: 300;
             font-size: 14px;
             color: var.$label-color;
+        }
+        &:focus {
+            border: 1px solid var.$bg-color-button;
+            outline: none;
+            box-shadow: 0 0 5px var.$bg-color-button + b5;
+        }
+        &:hover {
+            border: 1px solid var.$bg-color-button;
         }
     }
 }
