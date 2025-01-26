@@ -1,0 +1,48 @@
+@use "base/variables" as var;
+
+%content-disable {
+    content: '';
+}
+.carousel {
+    padding: 81px 0;
+    &__wrapper {
+        align-items: center;
+    }
+    &__slide {
+        padding: 0 50px;
+        img {
+            display: block;
+            width: 750px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__pagination {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+    &__button {
+        font-size: 50px;
+        color: var.$bg-color-button;
+        &-prev::after {
+            @extend %content-disable;
+        }
+        &-next::after {
+            @extend %content-disable;
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        transition: all .2s ease-in-out;
+        &-active {
+            background: var.$bg-color-button;
+            width: 13px;
+            height: 13px;
+        }
+    }
+    
+} 
