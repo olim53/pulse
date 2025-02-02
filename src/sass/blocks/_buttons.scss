@@ -25,4 +25,10 @@
     &:hover {
         background-color: #be0c0c;
     }
+    &--mini {
+        max-width: 100%;
+        height: 40px;
+        width: 131px;
+        font-size: 14px;
+    }
 }
