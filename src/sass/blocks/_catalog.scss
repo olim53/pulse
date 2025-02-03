@@ -46,10 +46,25 @@
     }
     &__content {
         margin-top: 57px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 10px;
+        display: none;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        &--active {
+            display: flex;
+            animation: fade 0.5s ease-in;
+        }
+        @keyframes fade {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
     }
     &-item {
         position: relative;
-        width: 303px;
+        width: 300px;
+        margin: 0 5px 10px;
         max-width: 100%;
         min-height: 442px;
         border: 2px solid #E8E8E8;

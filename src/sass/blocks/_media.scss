@@ -28,6 +28,11 @@
         font-size: 30px;
         line-height: 45px;
     }
+    .catalog {
+        &-item {
+            flex: 1 0 45%;
+        }
+    }
 }
 @media (max-width: 767.98px) {
     .container {
@@ -95,6 +100,14 @@
             line-height: 24px;
         }
     }
+    .catalog {
+        &__tab {
+            font-size: 14px;
+        }
+        &-item {
+            flex: 1 0 auto; 
+        }
+    }
 }
 @media (max-width: 575.98px) {
     .container {
@@ -149,6 +162,16 @@
         margin-right: auto;
         input {
             opacity: .7;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
         }
     }
 }

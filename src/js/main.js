@@ -11,6 +11,21 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+document.querySelectorAll('.catalog__tab').forEach((element, i) => {
+    element.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.catalog__content').forEach(tab => {
+            tab.classList.remove('catalog__content--active');
+        });
+        document.querySelectorAll('.catalog__tab').forEach(btn => {
+            btn.classList.remove('catalog__tab--active');
+        });
+        document.querySelectorAll('.catalog__tab')[i].classList.toggle('catalog__tab--active');
+        document.querySelectorAll('.catalog__content')[i].classList.toggle('catalog__content--active');
+        ;
+    });
+});
+
 function toggleSlide(item) {
     document.querySelectorAll(item).forEach((element, i) => {
         element.addEventListener('click', function(e) {
