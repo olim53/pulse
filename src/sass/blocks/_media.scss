@@ -164,14 +164,30 @@
             opacity: .7;
         }
     }
+    .carousel {
+        padding: 65px 0;
+    }
+    %transform-unset {
+        transform: unset;
+    }
     .catalog {
         &__tabs {
-            flex-direction: column;
+            margin-top: 30px;
+            flex-wrap: wrap;
         }
         &__tab {
+            @extend %transform-unset;
+            padding: 7px 14px;
             margin-bottom: 10px;
-            width: 100%;
-            max-width: 300px;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            div {
+                @extend %transform-unset;
+            }
+        }
+        &__content {
+            margin-top: 40px;
         }
     }
 }

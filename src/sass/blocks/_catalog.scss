@@ -1,7 +1,9 @@
 @use "../base/variables" as var;
 
 .catalog {
+    min-height: 645px;
     padding-bottom: 80px;
+    transition: height 2s ease-in-out;
     &__tabs {
         margin: 45px 0 0;
         padding: 0;
@@ -34,7 +36,7 @@
         }
         &--active {
             background: var.$bg-color-button;
-            border-width: 0;
+            border-color: var.$bg-color-button;
             color: var.$text-color-light;
             &:hover {
                 color: var.$text-color-light;
